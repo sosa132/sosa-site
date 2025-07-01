@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>SOSA — Личный сайт</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #3a0ca3, #7209b7, #b5179e);
+      background-size: 400% 400%;
+      color: #f0e9ff;
+      animation: gradientFlow 20s infinite alternate;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    header {
+      padding: 100px 20px 40px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(0,0,0,0.3), transparent);
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4em;
+      color: #e0aaff;
+      text-shadow: 0 0 10px #d98eff, 0 0 30px #b5179e;
+      letter-spacing: 8px;
+      background: linear-gradient(90deg, #e0aaff, #9d4edd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: logoGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes logoGlow {
+      0% { text-shadow: 0 0 10px #d98eff; }
+      100% { text-shadow: 0 0 25px #e0aaff; }
+    }
+
+    p.subtitle {
+      font-size: 1.3em;
+      color: #d2bfff;
+      margin-top: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #ffd6ff;
+      border-left: 6px solid #ffd6ff;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.15em;
+      background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+      padding: 10px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    li:hover {
+      background: linear-gradient(90deg, rgba(255,182,255,0.2), rgba(255,255,255,0));
+    }
+
+    li::before {
+      content: "★";
+      margin-right: 10px;
+      color: #f38fff;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #d3aaff;
+      font-size: 0.9em;
+      animation: fadeIn 2s ease-in;
+    }
+  
+    .icon {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+      border-radius: 6px;
+    }
+
+    .icon-group img.icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 6px;
+    }
+    .icon-group {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    .icon-group a {
+      display: inline-block;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .icon-group a:hover {
+      transform: scale(1.2);
+      filter: drop-shadow(0 0 6px #fff);
+    }
+</style>
+</head>
+<body>
+<header>
+<div class="logo">SOSA</div>
+<p class="subtitle">Креатив. Технологии. Искренность.</p>
+</header>
+<section>
+<h2>Обо мне</h2>
+<p>Я — SOSA. Меня вдохновляют не только технологии, но и люди, которые умеют видеть за строками кода — идею, эмоцию и стиль.
+    Я не просто пишу программы, я создаю цифровое пространство, в котором хочется быть. Моё мышление — нестандартное, подход — живой, а результаты — цепляют взгляд.
+    <br/><br/>
+    Я разбираюсь в web-разработке, создаю Telegram-ботов с голосом и характером, автоматизирую процессы, пишу на Python и C++, создаю игры и интерфейсы. Мне важно, чтобы каждый проект был не просто рабочим, а атмосферным.
+    <br/><br/>
+    В моих работах всегда есть энергия. Потому что я делаю то, что мне по-настоящему нравится.</p>
+</section>
+<section>
+<h2>Навыки</h2>
+<ul>
+<li><span class="icon-group"><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank"><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/></a></span><span class="icon-group"><a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank"><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/></a></span><span class="icon-group"><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank"><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/></a></span>Web-разработка: HTML, CSS, JavaScript</li>
+<li><img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>Программирование: Python</li>
+<li><span class="icon-group"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"/></span>Создание Telegram-ботов</li>
+<li><span class="icon-group"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png"/></span>UI/UX-дизайн</li>
+<li><span class="icon-group"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/2490/2490435.png"/></span>Игровые скрипты и RP-сервисы</li>
+</ul>
+</section>
+<footer>
+    Сделано с душой — © 2025 SOSA
+  </footer>
+</body>
+</html>
